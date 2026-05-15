@@ -1,8 +1,10 @@
 <?php
 
+use App\Livewire\ProductMain;
 use App\Livewire\Settings\Appearance;
 use App\Livewire\Settings\Profile;
 use App\Livewire\Settings\Security;
+use App\Models\Product;
 use Illuminate\Support\Facades\Route;
 use Laravel\Fortify\Features;
 
@@ -25,4 +27,5 @@ Route::middleware(['auth', 'verified'])->group(function () {
             ),
         )
         ->name('security.edit');
+    Route::get('/productos',ProductMain::class)->name('productos');
 });
