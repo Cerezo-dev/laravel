@@ -8,7 +8,7 @@ use Livewire\Component;
 class ProductMain extends Component
 {
     public function render(){
-        $productos=Product::all();
+        $productos=Product::paginate();
         return view('livewire.product-main',compact('productos'));
     }
 }

@@ -16,6 +16,11 @@
                         {{ __('Dashboard') }}
                     </flux:sidebar.item>
                 </flux:sidebar.group>
+
+                    <flux:sidebar.item icon="cube" :href="route('productos' )" :current="request()->routeIs('productos')" wire:navigate>
+                        {{ __('Productos') }}
+                    </flux: sidebar. item>
+                </flux:sidebar.group>
             </flux:sidebar.nav>
 
             <flux:spacer />
