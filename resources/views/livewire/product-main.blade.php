@@ -29,9 +29,9 @@
                         </flux:badge>
                     </flux:table.cell>
                     <flux:table.cell>
-                        <flux:button wire:click="openUpload({{ $item}})" icon="photo" class="cursor-pointer"></flux:button>
-                        <flux:button wire:click="edit({{ $item}})" variant="primary" color="amber" icon="pencil" class="cursor-pointer"></flux:button>
-                        <flux:button wire:click="confirm({{ $item}})" variant="primary" color="red" icon="trash" class="cursor-pointer"></flux:button>
+                        <flux:button wire:click="openUpload({{$item}})" icon="photo" class="cursor-pointer"></flux:button>
+                        <flux:button wire:click="edit({{$item}})" variant="primary" color="amber" icon="pencil" class="cursor-pointer"></flux:button>
+                        <flux:button wire:click="confirm({{$item}})" variant="primary" color="red" icon="trash" class="cursor-pointer"></flux:button>
                     </flux:table.cell>
                 </flux:table.row>
             @endforeach
@@ -89,3 +89,4 @@
         </div>
     </flux:modal>
 </div>
+
